@@ -9,7 +9,6 @@ import os
 import pandas as pd
 import numpy as np
 from stemming import Stemmer
-from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
@@ -19,7 +18,6 @@ class Dataset(object):
         '''
         directory: dataset directory as string
         stemmer: Potter's Stemmer for stemming and tokenizing from nltk
-        co_vectorizer: object to vectorize datas for featuring
         tf_vectorizer: object to vectorize datas which appears at least 15 documents for featuring
         '''
         self.directory = directory
